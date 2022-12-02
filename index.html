@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>In This Moment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/musicvideos.css" />
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation"> 
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img
+            src="images/logo.png"   width="130"
+          />
+        </a>
+    <a
+      role="button"
+      class="navbar-burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="index.html"> Home </a>
+        <a class="navbar-item" href="about.html">About </a>
+        <a class="navbar-item" href="musicvideos.html">Music</a>
+        <a class="navbar-item" href="discography.html"> Discography </a>
+        <a class="navbar-item" href="tour.html"> Tour </a>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="columns">
+    <div class="column"></div>
+    <div class="column is-one-fifth">  <figure class="image is-2by1">
+      <img src="images/logo.png">
+      </figure></div>
+    <div class="column"></div>
+  </div>
+
+
+  
+
+  <script>document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+  
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+  
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+  
+      });
+    });
+  
+  });</script>
+  </body>
+</html>
