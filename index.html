@@ -8,70 +8,126 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
-    <link rel="stylesheet" href="./css/musicvideos.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,400;0,500;1,200&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation"> 
+    <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="index.html">
-          <img
-            src="images/logo.png"   width="130"
-          />
+          <img src="images/logo.png" />
         </a>
-    <a
-      role="button"
-      class="navbar-burger"
-      aria-label="menu"
-      aria-expanded="false"
-      data-target="navbarBasicExample"
-    >
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
 
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="index.html"> Home </a>
-        <a class="navbar-item" href="about.html">About </a>
-        <a class="navbar-item" href="musicvideos.html">Music</a>
-        <a class="navbar-item" href="discography.html"> Discography </a>
-        <a class="navbar-item" href="tour.html"> Tour </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html"> Home </a>
+          <a class="navbar-item" href="about.html">About </a>
+          <a class="navbar-item" href="musicvideos.html">Music</a>
+          <a class="navbar-item" href="discography.html"> Discography </a>
+          <a class="navbar-item" href="tour.html"> Tour </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="columns is-centered">
+      <div class="column is-one-quarter">
+        <figure class="image is-2by1">
+          <img src="images/logo.png" />
+        </figure>
       </div>
     </div>
-  </nav>
-  
-  <div class="columns">
-    <div class="column"></div>
-    <div class="column is-one-fifth">  <figure class="image is-2by1">
-      <img src="images/logo.png">
-      </figure></div>
-    <div class="column"></div>
-  </div>
 
+    <div class="columns">
+      <div class="column mx-5 has-background-black-ter has-text-grey-light">
+        <ul>
+          <li>
+            <a
+              class="has-text-grey-light is-size-5"
+              href="https://blabbermouth.net/news/in-this-moment-shares-visualizer-for-adrenalize-1983-from-blood-1983-ep"
+              >In This Moment Shares Visualizer for Adrenalize-1983”</a
+            >
+          </li>
+          <br />
+          <li>
+            <a
+              class="has-text-grey-light is-size-5"
+              href="https://nevadasagebrush.com/2022/11/10/not-bad-for-a-wednesday-night-nothing-more-and-in-this-moment-rock-the-stage-in-reno/"
+              >Nothing More And In This Moment Rock The Stage In Reno</a
+            >
+          </li>
+          <br />
+          <li>
+            <a
+              class="has-text-grey-light is-size-5"
+              href="https://wrif.com/listicle/5-things-you-didnt-know-about-maria-brink-in-this-moment/"
+              >5 Things You Didn’t Know About Maria Brink & In This Moments</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="column is-three-fifths has-background-black-ter">
+        <figure class="image is-5by3">
+          <img src="images/inthismomentglow.jpg" />
+        </figure>
+        These are social media links with icons
+      </div>
+      <div class="column mx-5 has-background-black-ter has-text-grey-light">
+        <h3 class="title is-4 has-text-grey-light">Stream Now on</h3>
+        <ul class="is-size-5">
+          <li>Spotify</li>
+          <li>Apple Music</li>
+          <li>Amazon Music</li>
+          <li>Youtube Music</li>
+          <li>iTunes</li>
+          <li>Pandora</li>
+          <li>Deezer</li>
+          <li>Tidal</li>
+        </ul>
+      </div>
+    </div>
 
-  
+    <br />
 
-  <script>document.addEventListener('DOMContentLoaded', () => {
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
 
-    // Get all "navbar-burger" elements
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-  
-    // Add a click event on each of them
-    $navbarBurgers.forEach( el => {
-      el.addEventListener('click', () => {
-  
-        // Get the target from the "data-target" attribute
-        const target = el.dataset.target;
-        const $target = document.getElementById(target);
-  
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
-  
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
       });
-    });
-  
-  });</script>
+    </script>
   </body>
 </html>
