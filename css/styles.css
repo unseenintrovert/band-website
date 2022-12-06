@@ -19,3 +19,11 @@ body {
 .navbar a {
   color: white !important;
 }
+
+.article a {
+  font-family: "Overpass", sans-serif;
+}
+
+.list {
+  font-family: "Overpass", sans-serif;
+}
