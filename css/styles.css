@@ -1,6 +1,6 @@
-* {
+/* * {
   margin: 0;
-}
+} */
 
 body {
   background-color: #141414;
@@ -25,5 +25,13 @@ body {
 }
 
 .list {
+  font-family: "Overpass", sans-serif;
+}
+
+p {
+  font-family: "Overpass", sans-serif;
+}
+
+h1 {
   font-family: "Overpass", sans-serif;
 }
